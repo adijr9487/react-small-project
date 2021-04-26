@@ -1,0 +1,35 @@
+.boudary{
+    cursor: pointer;
+}
+.Add circle, .Cancel circle{
+    transition: 0.2s;
+}
+.Add .Cross{
+    fill: "#656565";
+    transition: 0.2s;
+}
+.Add .CrossPath{
+    fill: "#656565";
+}
+.Add .boudary:hover .Cross{
+    fill: #F2F2F2;
+}
+.Add .boudary:hover .CrossPath{
+    fill: "#ccc";
+}
+.Add .boudary:hover circle{
+    fill: #67D5B1;
+}
+
+.Cancel{
+    transform: rotate(45deg);
+}
+.Cancel .boudary:hover circle{
+    fill: #e64a4a;
+}
+.Cancel .boudary:hover .Cross{
+    fill: #F2F2F2;
+}
+.Cancel .boudary:hover .CrossPath{
+    fill: "#ccc";
+}

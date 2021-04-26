@@ -1,0 +1,48 @@
+.Tile{
+    background-color: rgb(197, 70, 70);
+    width: 250px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    box-shadow: 0 0 10px #ccc;
+    animation: tileAnimation 1s backwards;
+}
+.Header{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0;
+    width: 100%;
+    position: absolute;
+}
+.Title{
+    color: rgb(78, 78, 78);   
+    padding: 0 15px;
+}
+.forwardLink{
+    padding: 0 15px;
+}
+.forwardLink a{
+    color: rgb(86, 124, 194);
+    text-decoration: none;
+    user-select: none;
+}
+.forwardLink a:hover{
+    color: rgb(22, 22, 189);
+}
+
+.Display{
+    background-color: rgb(49, 165, 165);
+    height: 250px;
+
+}
+
+@keyframes tileAnimation{
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

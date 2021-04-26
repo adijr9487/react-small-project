@@ -1,0 +1,71 @@
+.Todo{
+    font-family: sans-serif;
+    height: 100vh;
+    background-color: #67D5B1;
+    display: flex;
+    flex-flow: column;
+    overflow: hidden;
+}
+.Header{
+    font-size: 2rem;
+    text-align: center;
+    letter-spacing: 15px;
+    color: #f5f5f5;
+    padding: 20px 0;
+    width: 100%;
+    height: 5%;
+    user-select: none;
+    z-index: 1;
+}
+.Components{
+    display: flex;
+    justify-content: center;
+    height: 95%;
+    margin-right: -16px;
+    box-sizing: border-box;
+    background-color: #f5f5f5;
+    overflow-y: scroll;
+}
+.TodoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.NullAdd{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.NullAdd p{
+    color: #585858;
+    letter-spacing: 5px;
+    user-select: none;
+    text-align: center;
+}
+.AddModal{
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.DropBox{
+    position: absolute;
+    z-index: 1;
+    background-color: #58585873;
+    height: 100%;
+    width: 100%;
+    animation: backdrop 0.4s backwards;
+}
+
+@keyframes backdrop{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}

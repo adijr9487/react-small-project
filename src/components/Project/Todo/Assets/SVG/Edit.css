@@ -1,0 +1,9 @@
+.Edit path{
+    fill: rgb(133, 133, 133);
+}
+.Edit:hover path{
+    fill: rgb(82, 82, 82);
+}
+.Edit:hover{
+    cursor: pointer;
+}
